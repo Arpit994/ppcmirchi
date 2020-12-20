@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    border-radius: 2.5rem;
+    width: 65%;
+}
+nav img{
+    width:2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar{
+    padding:0.1rem 0.8rem;
+    color: black;
+    background-color: rgba(0,0,0,0.6);
+}
+.nav-link{
+    color:white !important;
+}
+.navbar-toggler{
+   border-radius: 50%;
+   padding:0.3rem 0.4rem;
+   border: 0.05rem solid white ;
+}
+.navbar-toggler:active,.navbar-toggler:focus{
+    border: 0.02rem solid white ;
+     outline: none;}
+.navbar-toggler-icon{
+    color:black !important;
+}
+/*.myheader{
+    position: absolute;
+    top:0;
+    z-index: -11;
+}*/
+/* services */
+.section-title {
+    margin-bottom: 38px
+}
+
+.shadow,
+.subscription-wrapper {
+    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important
+}
+
+.icon-primary {
+    color: #062caf
+}
+
+.icon-bg-circle {
+    position: relative
+}
+
+.icon-lg {
+    font-size: 50px
+}
+
+.icon-bg-circle::before {
+    z-index: 1;
+    position: relative
+}
+
+.icon-bg-primary::after {
+    background: #062caf !important
+}
+
+.icon-bg-circle::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: -35px;
+    left: 15px;
+    border-radius: 50%;
+    background: inherit;
+    opacity: .1
+}
+
+p,
+.paragraph {
+    font-weight: 400;
+    color: #8b8e93;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif
+}
+
+.icon-bg-yellow::after {
+    background: #f6a622 !important
+}
+
+.icon-bg-purple::after {
+    background: #7952f5
+}
+
+.icon-yellow {
+    color: #f6a622
+}
+
+.icon-purple {
+    color: #7952f5
+}
+
+.icon-cyan {
+    color: #02d0a1
+}
+
+.icon-bg-cyan::after {
+    background: #02d0a1
+}
+
+.icon-bg-red::after {
+    background: #ff4949
+}
+
+.icon-red {
+    color: #ff4949
+}
+
+.icon-bg-green::after {
+    background: #66cc33
+}
+
+.icon-green {
+    color: #66cc33
+}
+
+.icon-bg-orange::after {
+    background: #ff7c17
+}
+
+.icon-orange {
+    color: #ff7c17
+}
+
+.icon-bg-blue::after {
+    background: #3682ff
+}
+
+.icon-blue {
+    color: #3682ff
+}
+
+/* services */
+.myhidden{
+    visibility: hidden;
+}
+
+
+/* media query */
+@media only screen and (max-width:992px){
+    .nav-link{
+        border-bottom: 0.02rem solid white;
+    }
+    .navbar-nav{
+        margin-left: auto;
+       margin-bottom: 1rem;
+       margin-right: 0;
+    }
+   
+}
+@media only screen and (max-width:576px){
+    
+}
+@media only screen and (min-width:1200px){
+   
+}
