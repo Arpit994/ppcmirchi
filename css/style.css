@@ -1,44 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    border-radius: 2.5rem;
-    width: 65%;
+
+body{background-color: black;
+    font-family: 'Ubuntu', sans-serif;}
+
+.navbar{ background-image: linear-gradient(to right,#fff 35% ,#e60000 50%);}
+
+.navbar-brand img{width:140px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
-nav img{
-    width:2.6rem;
-    height: 2.6rem;
-    border-radius: 50%;
-}
-.navbar-brand{
-    padding: 0;
-}
-.navbar{
-    padding:0.1rem 0.8rem;
-    color: black;
-    background-color: rgba(0,0,0,0.6);
-}
-.nav-link{
-    color:white !important;
-}
-.navbar-toggler{
-   border-radius: 50%;
-   padding:0.3rem 0.4rem;
-   border: 0.05rem solid white ;
-}
-.navbar-toggler:active,.navbar-toggler:focus{
-    border: 0.02rem solid white ;
-     outline: none;}
-.navbar-toggler-icon{
-    color:black !important;
-}
-/*.myheader{
-    position: absolute;
-    top:0;
-    z-index: -11;
-}*/
+
+.nav-link{font-size: 22px;
+color:#fff !important;}
+
+.cust-header{position: relative;}
+.ppc-tag{position: absolute;}
+
 /* services */
 .section-title {
     margin-bottom: 38px
@@ -151,23 +134,207 @@ p,
 .myhidden{
     visibility: hidden;
 }
+#myservices .card,.footer{background-color:#e60000 !important;
+color:#fff !important;}
 
+#myservices .card p{color: #fff;}
+#myservices .card i{color: #fff;}
+#myservices .card h4{text-decoration: underline;}
+
+
+/* team start */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #e60000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #e60000;
+}
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #fff !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #fff !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#team .card-text{color:#fff;}
+/* team end */
+
+.footer .list-group-item{background-color: transparent;
+line-height: 20px;
+padding: 6px 0px;
+border:none;}
+
+.footer .list-group-item a{
+    color: #fff;
+}
+hr{background-color: #fff;
+margin-top: 0;}
 
 /* media query */
+
 @media only screen and (max-width:992px){
-    .nav-link{
-        border-bottom: 0.02rem solid white;
-    }
-    .navbar-nav{
-        margin-left: auto;
-       margin-bottom: 1rem;
-       margin-right: 0;
-    }
-   
+    .nav-link{color:#000 !important;}
+ }
+
+ @media (max-width: 768px) {  
+   .ppc-tag h1{font-size: 24px;}
+   .ppc-tag h3{font-size: 20px;}
 }
-@media only screen and (max-width:576px){
-    
+@media (max-width: 576px) {  
+.ppc-tag h1{font-size: 20px;}
+   .ppc-tag h3{font-size: 14px;}
 }
-@media only screen and (min-width:1200px){
-   
+@media (min-width: 320px) {  
+   .ppc-tag{
+    top: 160px;
+    left: 10px;
+   }
 }
+@media (max-width: 359px) {  
+   .ppc-tag{
+    display: none;
+   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+   .ppc-tag{
+    top: 220px;
+    left: 25px;
+   }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+     .ppc-tag{
+    top: 250px;
+    left: 30px;
+   }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+   .nav-link{margin-left: 22px;}
+
+   .ppc-tag{
+    top:290px;
+    left: 75px;
+   }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .ppc-tag{
+    top: 400px;
+    left: 150px;
+   }
+}
+ 
