@@ -9,7 +9,7 @@
 body{background-color: #232b2b;
     font-family: 'Ubuntu', sans-serif;}
 
-.navbar{ background-image: linear-gradient(to right,#fff 35% ,#dc3d24 50%);}
+.navbar{ background-image: linear-gradient(to right,#fff 35% ,#333d79ff 50%);}
 
 .navbar-brand img{width:140px;
     margin-top: -10px;
@@ -134,7 +134,7 @@ p,
 .myhidden{
     visibility: hidden;
 }
-#myservices .card,.footer{background-color:#dc3d24 !important;
+#myservices .card,.footer{background-color:#333d79ff !important;
 color:#fff !important;}
 
 #myservices .card p{color: #fff;}
@@ -152,7 +152,7 @@ color:#fff !important;}
 }
 
 .btn-primary {
-    color: #dc3d24;
+    color: #333d79ff;
     background-color: #fff;
     border-color: #fff;
 }
@@ -170,7 +170,7 @@ section .section-title {
 
 #team .card {
     border: none;
-    background: #dc3d24;
+    background: #333d79ff;
 }
 .image-flip:hover .backside,
 .image-flip.hover .backside {
