@@ -6,10 +6,10 @@
     box-sizing: border-box;
 }
 
-body{background-color: black;
+body{background-color: #232b2b;
     font-family: 'Ubuntu', sans-serif;}
 
-.navbar{ background-image: linear-gradient(to right,#fff 35% ,#e60000 50%);}
+.navbar{ background-image: linear-gradient(to right,#fff 35% ,#dc3d24 50%);}
 
 .navbar-brand img{width:140px;
     margin-top: -10px;
@@ -134,7 +134,7 @@ p,
 .myhidden{
     visibility: hidden;
 }
-#myservices .card,.footer{background-color:#e60000 !important;
+#myservices .card,.footer{background-color:#dc3d24 !important;
 color:#fff !important;}
 
 #myservices .card p{color: #fff;}
@@ -152,7 +152,7 @@ color:#fff !important;}
 }
 
 .btn-primary {
-    color: #e60000;
+    color: #dc3d24;
     background-color: #fff;
     border-color: #fff;
 }
@@ -170,7 +170,7 @@ section .section-title {
 
 #team .card {
     border: none;
-    background: #e60000;
+    background: #dc3d24;
 }
 .image-flip:hover .backside,
 .image-flip.hover .backside {
@@ -281,7 +281,7 @@ margin-top: 0;}
 /* media query */
 
 @media only screen and (max-width:992px){
-    .nav-link{color:#000 !important;}
+    .nav-link{color:#232b2b !important;}
  }
 
  @media (max-width: 768px) {  
